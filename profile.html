@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <title>MedApp- Health Dashboard</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="assets/bundles/summernote/summernote-bs4.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -56,7 +60,7 @@
                 <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
 											text-white"> <img alt="image" src="assets/img/message.png" class="rounded-circle">
                   </span> <span class="dropdown-item-desc"> <span class="message-user">Dr.
-                      Deo</span>
+                      Asamoah</span>
                     <span class="time messege-text">Please check your mail !!</span>
                     <span class="time">2 Min Ago</span>
                   </span>
@@ -167,13 +171,13 @@
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Main</li>
-            <li class="dropdown active">
+            <li class="dropdown">
               <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
             <li class="dropdown">
               <a href="search-doctor.html" class="nav-link"><i data-feather="search"></i><span>Search Doctor</span></a>
             </li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="profile.html" class="nav-link"><i data-feather="settings"></i><span>Profile</span></a>
             </li>
           </ul>
@@ -182,218 +186,120 @@
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
-          <div class="row ">
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="card" id="card-display">
-                <div class="card-statistic-4">
-                  <div class="align-items-center justify-content-between">
-                    <div class="row ">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                        <div class="card-content">
-                          <h5 class="font-18">Consultation</h5>
-
+          <div class="section-body">
+            <div class="row mt-sm-4">
+              <div class="col-12 col-md-12 col-lg-8">
+                <div class="card">
+                  <div class="padding-20">
+                    <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#about" role="tab"
+                          aria-selected="true">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#settings" role="tab"
+                          aria-selected="false">Setting</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content tab-bordered" id="myTab3Content">
+                      <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab2">
+                        <div class="row">
+                          <div class="col-md-3 col-6 b-r">
+                            <strong>Full Name</strong>
+                            <br>
+                            <p class="text-muted">Rexford</p>
+                          </div>
+                          <div class="col-md-3 col-6 b-r">
+                            <strong>Mobile</strong>
+                            <br>
+                            <p class="text-muted">+233571148894</p>
+                          </div>
+                          <div class="col-md-3 col-6 b-r">
+                            <strong>Email</strong>
+                            <br>
+                            <p class="text-muted">rexfordasamoah@gmail.com</p>
+                          </div>
+                          <div class="col-md-3 col-6">
+                            <strong>Location</strong>
+                            <br>
+                            <p class="text-muted">Ghana</p>
+                          </div>
                         </div>
+                        <p class="m-t-30">Eyes issue</p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                        <div class="banner-img">
-                          <img src="assets/img/banner/clip-1426.png" alt="" height="139px">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="card" id="card-display">
-                <div class="card-statistic-4">
-                  <div class="align-items-center justify-content-between">
-                    <div class="row ">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                        <div class="card-content">
-                          <h5 class="font-18"> Get Drugs</h5>
-
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                        <div class="banner-img">
-                          <img src="assets/img/banner/flame-761.png" alt="" height="139px">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="card" id="card-display">
-                <div class="card-statistic-4">
-                  <div class="align-items-center justify-content-between">
-                    <div class="row ">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                        <div class="card-content">
-                          <h5 class="font-18">Medical Lab</h5>
-
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                        <div class="banner-img">
-                          <img src="assets/img/banner/gummy-medical-lab.png" alt="" height="139px">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-
-
-
-        </section>
-        <!-- Second Row -->
-        <section class="section">
-          <div class="row">
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="card" id="card-display">
-                <div class="card-statistic-4">
-                  <div class="align-items-center justify-content-between">
-                    <div class="row ">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                        <div class="card-content">
-                          <h5 class="font-18">Insurance</h5>
-
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                        <div class="banner-img">
-                          <img src="assets/img/banner/delesign-health-insurance.png" alt="" height="139px">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="card" id="card-display">
-                <div class="card-statistic-4">
-                  <div class="align-items-center justify-content-between">
-                    <div class="row ">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                        <div class="card-content">
-                          <h5 class="font-18"> Find Nearest Hospital</h5>
-
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                        <div class="banner-img">
-                          <img src="assets/img/banner/arabica-1087.png" alt="" height="139px">
-                        </div>
+                      <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="profile-tab2">
+                        <form method="post" class="needs-validation">
+                          <div class="card-header">
+                            <h4>Edit Profile</h4>
+                          </div>
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="form-group col-md-6 col-12">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" value="Rex">
+                                <div class="invalid-feedback">
+                                  Please fill in the first name
+                                </div>
+                              </div>
+                              <div class="form-group col-md-6 col-12">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" value="Asamoah">
+                                <div class="invalid-feedback">
+                                  Please fill in the last name
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group col-md-7 col-12">
+                                <label>Email</label>
+                                <input type="email" class="form-control" value="rexfordasamoah@gmail.com">
+                                <div class="invalid-feedback">
+                                  Please fill in the email
+                                </div>
+                              </div>
+                              <div class="form-group col-md-5 col-12">
+                                <label>Phone</label>
+                                <input type="tel" class="form-control" value="">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group col-12">
+                                <label>Bio</label>
+                                <textarea
+                                  class="form-control summernote-simple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatum alias molestias minus quod dignissimos.</textarea>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group mb-0 col-12">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" name="remember" class="custom-control-input" id="newsletter">
+                                  <label class="custom-control-label" for="newsletter">Subscribe to newsletter</label>
+                                  <div class="text-muted form-text">
+                                    You will get new information about products, offers and promotions
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-footer text-right">
+                            <button class="btn btn-primary">Save Changes</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="card" id="card-display">
-                <div class="card-statistic-4">
-                  <div class="align-items-center justify-content-between">
-                    <div class="row ">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                        <div class="card-content">
-                          <h5 class="font-18">Health Information</h5>
-
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                        <div class="banner-img">
-                          <img src="assets/img/banner/clip-949.png" alt="" height="139px">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </section>
-        <!-- End of Section -->
-        <!-- Thired Section Row -->
-        <section class="section">
-          <div class="row ">
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="card" id="card-display">
-                <div class="card-statistic-4">
-                  <div class="align-items-center justify-content-between">
-                    <div class="row ">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                        <div class="card-content">
-                          <h5 class="font-18">Deit Plan</h5>
-
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                        <div class="banner-img">
-                          <img src="assets/img/banner/pixeltrue-plan-1.png" alt="" height="139px">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="card" id="card-display">
-                <div class="card-statistic-4">
-                  <div class="align-items-center justify-content-between">
-                    <div class="row ">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                        <div class="card-content">
-                          <h5 class="font-18"> Emergence</h5>
-
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                        <div class="banner-img">
-                          <img src="assets/img/banner/bermuda-doctor-arrived-on-call(1).png" alt="" height="139px">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="card" id="card-display">
-                <div class="card-statistic-4">
-                  <div class="align-items-center justify-content-between">
-                    <div class="row ">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
-                        <div class="card-content">
-                          <h5 class="font-18">Ambulance Services</h5>
-
-                        </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
-                        <div class="banner-img">
-                          <img src="assets/img/banner/3.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-        <!-- End of Section -->
         <div class="settingSidebar">
           <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
           </a>
@@ -498,15 +404,12 @@
   <!-- General JS Scripts -->
   <script src="assets/js/app.min.js"></script>
   <!-- JS Libraies -->
-  <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/bundles/summernote/summernote-bs4.js"></script>
   <!-- Page Specific JS File -->
-  <script src="assets/js/page/index.js"></script>
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="assets/js/custom.js"></script>
 </body>
-
-
 
 </html>

@@ -3,6 +3,12 @@
 $(window).on("load", function () {
   $(".loader").fadeOut("slow");
 });
+$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+});
 
 feather.replace();
 // Global
